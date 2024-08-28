@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://media.istockphoto.com/id/505125296/photo/wooden-cricket-bat-and-ball-on-a-white-background.jpg?s=612x612&w=0&k=20&c=b54YfksQfdM_oExjMx6LU5myGkY6gveVqkPvM2CeWYY=" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+
+  //we can use onclick in different ways
+  //1. use in html part
+  
+  //2. in script 
+  // document.querySelector('#owl').onclick=function(){
+  //   alert(`owl clicked`)
+  // }
+
+  // //3. new way to use is add0EventListener() => it can listen every thing wht is happening in the wp like drag and drop,click,submit,mouseover etc 
+
+  // document.querySelector('#owl').addEventListener('click',function(){
+  //   alert(`owl is clicked once again`)
+  // },false)//by default it is false
+
+  // what we have to learn
+  // type, timeStamp, defaultPrevented, target, toElement,srcElement, currentTarget
+
+  //more....  clientX, clientY, screenX, screenY
+  //altKey, ctrlKey, shiftKey, keycode
+
+
+  //bubbling => it goes from inside to outside.it is done with writing false
+
+  // document.querySelector('#images').addEventListener('click',function(e){
+  //   console.log('ul tag is clicked');
+    
+  // },false)
+  // document.querySelector('#owl').addEventListener('click',function(e){
+  //   console.log('owl clicked');
+    
+  // },false)
+
+  //clicking any other img other then owl it showing "ul tag is clicked" but on clicking owl first "owl clicked" is showing then after "ul tag is clicked" is showing bcoz it going from inside to outside and 'ul tag is clicked' is shown bcoz owl is inside ul tag
+
+
+  //capturing => it goes from outside to inside.It is opposite of bubbling.it is done by true
+  
+  // document.querySelector('#images').addEventListener('click',function(e){
+  //   console.log('ul tag is clicked');
+  //   e.stopPropagation()
+    
+  // },true)
+  // document.querySelector('#owl').addEventListener('click',function(e){
+  //   console.log('owl clicked');
+  
+    
+  // },true)
+   
+   //ul tag is clicked
+   //owl clicked
+
+   // e.stopPropagation() stops the further process of bubbling and capturing 
+
+
+   //TASK => REMOVE IMAGES ON CLICKING
+
+   document.querySelector('#images').addEventListener('click',function(e){
+        // console.log(e.target);
+
+        //<img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt>
+        
+        //we got the target but we want to select it's parent
+
+        console.log(e.target.parentNode);
+        //from this we got the total 'li' tag
+
+        e.target.parentNode.remove()
+   },false)
+</script>
