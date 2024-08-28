@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Document</title>
+</head>
+<body style="background-color: black; color: aqua;">
+  <script>
+    let element=document.createElement('div')//From this we 
+    console.log(element); // can create css element
+    element.className="main"   
+    element.id="myid"  
+    //element.innerText='saqib khan'
+            //OR
+   let addtext= document.createTextNode("saqib khan")   
+    element.appendChild(addtext)
+    
+    //this all not shown in webpage bcoz it is stored in the memory to show in the webpage
+    document.body.appendChild(element)
+    </script>
+</body>
+</html>

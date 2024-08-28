@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DOM</title> <!-- DOM means from what thing our webpage is designed with  -->
+  <style>
+    .bg-color{
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body class="bg-color">
+  <div>
+    <h1 id="title" class="heading">Saqib khan</h1>
+    <span style="display: none;">test content</span>
+    <input type="password" id="" class="">
+    <ul>           <!--  unordered list-->
+      <li class="list-item">one</li>
+      <li  class="list-item">two</li>
+      <li class="list-item">three</li>
+      <li class="list-item">four</li>
+
+    </ul>
+  </div>
+</body>
+</html>
+
+
+<!--  NOTES:-
+  1. document.getElementById('title')
+<h1 id=​"title" class=​"heading">​Saqib khan​</h1>​
+
+2. document.getElementById('heading')   
+null  // null bcoz here we have to put only id name
+
+3.  document.getElementById('title').id
+'title'   // only title name appears
+
+4.  document.getElementById('title').className
+'heading'    // only heading name appears
+
+5.  document.getElementById('title').getAttribute('id')
+'title'    // from the getAttribute()we can all attribute what we have used
+
+6.  document.getElementById('title').getAttribute('class')
+'heading'
+
+7.  document.getAttribute('id') //it can't be used alone
+
+VM373:1 Uncaught 
+TypeError: document.getAttribute is not a function
+    at <anonymous>:1:10
+(anonymous)	@	VM373:1
+
+8. document.getElementById('title').setAttribute('class','test')
+<h1 id="title" class="test">Saqib khan</h1>
+
+//fromsetAttribute we can set the attri but replaces the heading
+
+9.  let title=document.getElementById('title')
+
+   <h1 id="title" class="test">Saqib khan</h1> // now this saved in the variable title
+
+10. title.style.backgroundColor='red' 
+
+   // now by applying .style we can do any changes in the webpage from the console
+
+11.     title.innerText    |      title.textContent  
+      'Saqib khan'         |      'Saqib khan' 
+
+      //difference b/w this is textContext can show the hidden content that what we have hide using css 
+
+
+12.   let unoderedlist=document.querySelector('ul')
+       unoderedlist.querySelector('li').style.backgroundColor='green'
+      'green'  
+      
+      
+13.   document.querySelectorAll('li')//it will select all the 
+                                        list . Ths will create a nodelist which not an array but similar to array
+
+                                      NodeList(3) [li, li, li]
+                                      like an array
+
+14. myli[0].style.color='red'  
+   'red'      //to access this we have to give index
+   
+ 
+15. document.getElementsByClassName('list-item')
+
+     HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item] // it is giving the html collection so to use forEach() we have to convert it into array
+
+
+
+
+
+
+-->

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Document</title>
+  <style>
+    .bg-color{
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body class="bg-color">
+  <div class="papa">
+    <div class="day">Monday</div>
+    <div class="day">Tuesday</div>
+    <div class="day">Wednesday</div>
+    <div class="day">Thrusday</div>
+
+  </div>
+  <script>
+    let parent=document.querySelector('.papa');
+   // console.log(parent);
+   // console.log(parent.children); //it gives all 4 div HTML 
+                                  //collection
+    //To access any child or element
+
+    //console.log(parent.children[1]);//<div class="day">       
+                                    //Tuesday</div>/tuesday
+
+    // console.log(parent.children[1].innerHTML); //Tuesday
+
+     for (let i = 0; i < parent.children.length; i++) {
+              //console.log(parent.children[i].innerHTML);
+              //normal for loop can be applied irrespective of html collection
+     }
+     // we can go from parent to child(last an first value only)
+
+     //console.log(parent.firstElementChild);
+     // <div class="day">Monday</div>
+
+    // console.log(parent.lastElementChild);
+     // <div class="day">Thrusday</div>
+
+     //moving from child to parent
+
+     let dayone=document.querySelector('.day');
+    // console.log(dayone);
+   //  <div class="day">Monday</div> now we have moved to child
+
+   //console.log(dayone.parentElement); //it will show total 
+                                      //root div
+    // console.log(dayone.nextElementSibling);//<div 
+                                  //class="day">Tuesday</div>
+      console.log(parent.childNodes);
+                                  
+                                    
+  </script>
+</body>
+</html>
