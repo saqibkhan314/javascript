@@ -11,7 +11,7 @@ country.set('USA',"usa")
 
 
 for (const cname of country) {
- // console.log(cname);
+  //console.log(cname);
   
 }//[ 'IN', 'Odissa' ]
 //[ 'USA', 'usa' ] it is in the form of array
@@ -20,7 +20,7 @@ for (const cname of country) {
 //in the form of key-value
 
 for (const [key,value] of country) {
-  console.log(key,value);
+  // console.log(key,value);
   
 }
 

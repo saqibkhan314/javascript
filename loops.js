@@ -3,7 +3,7 @@ let arr=[1,2,3,4,5,6]
 //for-of loop
 
 for (const value of arr) {
- // console.log(value);
+//  console.log(value);
   
 }
 // for (const element of object) {
@@ -21,7 +21,7 @@ let obj={
 // for (const myobj of obj) {
 //   console.log(myobj);
   
-// }//undefined
+// }//error => bcoz for-of loop can't be applied into object
 
 
 //for-in loop can be applied into object
@@ -29,7 +29,7 @@ let obj={
 for (const saqib in obj) {
  // console.log(saqib);//from this we got only keys
   
- // console.log(obj[saqib]);
+//  console.log(obj[saqib]);
   //and from this we got only values
 }
 
@@ -43,7 +43,7 @@ num.forEach( function (val){
   
 } )
 
-//INSIDE THE () IT IS CALL BACK FUNCT SO IT DOENOT HAVE FUNCTION NAME.IT WILL AUTOMATICALLY GOES TO EACH VALUE OF NUM ARRAY
+//INSIDE THE () IT IS CALL BACK FUNCT SO IT DOESNOT HAVE FUNCTION NAME.IT WILL AUTOMATICALLY GOES TO EACH VALUE OF NUM ARRAY
 
 
 //as arrow function
@@ -90,7 +90,7 @@ let coding=[
 ]
 
 coding.forEach( (lang) => {
- // console.log(lang.languagename);
+ //console.log(lang.languagename);
   
 } )
 
@@ -99,24 +99,26 @@ coding.forEach( (lang) => {
 //THIS FOR-EACH LOOP NEITHER STORE NOR RETURNS ANYTHING
 
 let values=num.forEach( (item) => {
-//  console.log(item);
-  //return item;
-  //o/p => undefined
+ //console.log(item);
+  return item;
+ // o/p => undefined
 } )
 
-//console.log(values);
+// console.log(values);
 //o/p => undefined
 
 
 //to return the values we can use filter() operator .it is also a callback function
 
-//but this filter operation needs the condition and which will be true then taht will be returned
+//but this filter operation needs the condition and which will be true then that will be returned
 
 let mynums=[1,2,3,4,5,6,7,8,9,10]
 
-let res=mynums.filter( (num1) => num1 > 5 )
+// let res=mynums.filter( (num1) => num1 > 5 )
 
-console.log(res);
+// console.log(res);
+//console.log(mynums.filter( (num1) => num1 > 5 ));
+
 
 
 

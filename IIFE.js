@@ -6,7 +6,7 @@
 
 (function name() {
   console.log('DB connected');                  //THIS IS NAMED IIFE
-})();  //; to end context as it doesn't know 
+})(); //; to end context as it doesn't know 
 
 
 //FOR NORMAL FUNCTION

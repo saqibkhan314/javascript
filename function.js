@@ -12,24 +12,24 @@
 
 /****************OR******************* */
 
-function handleobj(anyobject)
-{
-  console.log(`username is ${anyobject.name} and his age is ${anyobject.age}`);
-}
-handleobj({
-  name:"saqib",     //WE CAN CREATE AN OBJ DURING THE FUNCTION CALLING
-  age:20,
-  year:2024
-});
+// function handleobj(anyobject)
+// {
+//   console.log(`username is ${anyobject.name} and his age is ${anyobject.age}`);
+// }
+// handleobj({
+//   name:"saqib",     //WE CAN CREATE AN OBJ DURING THE FUNCTION CALLING
+//   age:20,
+//   year:2024
+// });
 
 
 
 
-function calculatecart(val1,val2,...val) {//...val creates array
-  return val;
-}
+// function calculatecart(val1,val2,...val) {//...val creates array
+//   return val;
+// }
 
-console.log(calculatecart(200,300,569,379,25,35));
+// console.log(calculatecart(200,300,569,379,25,35));
 
 
 

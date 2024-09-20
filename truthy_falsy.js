@@ -7,4 +7,4 @@
 
 //SURPRISING TRUTHY VALUES
 
-//"0", 'false' , " ",empty_array => [] , empty_object => {} , function(){}
+//"0", 'false' , " ",empty_array => [] , empty_object => {} , function(){}   

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="background-color: black;">
+  
+</body>
+<script>
+ let xhr = new XMLHttpRequest();//it is a method() in which u can send or recieve request
+ let requestURL =  "https://youtube.com/"
+ xhr.open('GET',requestURL);// this only send the request. it contains two parameter (method,string). method => which type of request u are sending ex: "get","post" etc
+
+ // request has not been sent till as we have to call first.To call we use .send()
+
+ xhr.send("here")
+
+</script>
+</html>
+
+
+// before the introduction of fetch() the api request was done by XML HTTP request. XML HTTP request uses heavily AJAX(Asynchronous JavaScript and XML) programming 

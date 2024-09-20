@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>saqib</h1>
+  <button id="stop">stop</button>
+  <script>
+    // setTimeout(function(){
+    //   console.log("saqib");
+      
+    // },60000)//it tells after some millisecond do my task which is under inside funct
+    
+    let name=function(){
+      console.log('khan');
+    }
+    let stop=setTimeout(name,2000) //function reference is passed 'name'
+    // to stop setTimeOut() we have clearTimeOut()
+
+  
+    document.querySelector('#stop').addEventListener('click',() => {
+      clearTimeout(stop)
+      console.log('js');
+      
+    })
+
+    //setInterval() it tells some after given time repeat my task
+
+    // setInterval(function(){
+    //     console.log('saqib');
+        
+    // },1000)
+  </script>
+</body>
+</html>

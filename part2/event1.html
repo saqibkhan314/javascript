@@ -43,30 +43,29 @@
 
   //bubbling => it goes from inside to outside.it is done with writing false
 
-  // document.querySelector('#images').addEventListener('click',function(e){
-  //   console.log('ul tag is clicked');
+//   document.querySelector('#images').addEventListener('click',function(e){
+//     console.log('ul tag is clicked');
     
-  // },false)
-  // document.querySelector('#owl').addEventListener('click',function(e){
-  //   console.log('owl clicked');
+//   },false)
+//   document.querySelector('#owl').addEventListener('click',function(e){
+//     console.log('owl clicked');
     
-  // },false)
+//   },false)
 
-  //clicking any other img other then owl it showing "ul tag is clicked" but on clicking owl first "owl clicked" is showing then after "ul tag is clicked" is showing bcoz it going from inside to outside and 'ul tag is clicked' is shown bcoz owl is inside ul tag
+  //Bubbling => clicking any other img other then owl it is showing "ul tag is clicked" but on clicking owl first "owl clicked" is showing then after "ul tag is clicked" is showing bcoz it going from inside to outside and 'ul tag is clicked' is shown bcoz owl is inside ul tag. Bubbling is happening bcoz "false" written inside addEventListener(). By the bydefault is also "false" when not written
 
 
-  //capturing => it goes from outside to inside.It is opposite of bubbling.it is done by true
+  //capturing => it goes from outside to inside.It is opposite of bubbling.it is done by "true"
   
-  // document.querySelector('#images').addEventListener('click',function(e){
-  //   console.log('ul tag is clicked');
-  //   e.stopPropagation()
-    
-  // },true)
-  // document.querySelector('#owl').addEventListener('click',function(e){
-  //   console.log('owl clicked');
-  
-    
-  // },true)
+  document.querySelector('#images').addEventListener('click',function(e){
+    console.log('ul tag is clicked');
+    e.stopPropagation()
+   },true)
+
+
+  document.querySelector('#owl').addEventListener('click',function(e){
+    console.log('owl clicked');
+   },true)
    
    //ul tag is clicked
    //owl clicked

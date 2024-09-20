@@ -15,13 +15,13 @@ let a=[0,1,3,6,25,36,24,"saqib",true,null]
 // console.log(a);
 
 
-// a.shift();
+// a.shift(); //FIRST ELEMENT WILL BE POPED OUTSIDE AND OTHER ELEMENTS WILL BE SHIFTED LEFT SIDE
 // console.log(a);
 
 
-let newarr=a.join();//JOINS THE ARRAY AND CONVERT IT INTO STRING
+// let newarr=a.join();//CONVERTS AN ARRAY INTO A STRING BY JOINING ALL ELEMENTS
 
-console.log(newarr);
+// console.log(newarr);
 
 
 /****SLICE AND SPLICE****** */

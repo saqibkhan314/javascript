@@ -13,8 +13,11 @@ let user={
 //to accsee obj
 
 // console.log(user["name"]);
+        //OR
+// console.log(user.name);
 
-let sym=Symbol("key")
+
+let sym=Symbol()
 
 //ques => to show symbol in the object and it should be working as key
 
@@ -39,12 +42,12 @@ console.log(typeof sym);  //symbol
 //To add functions in objects
 
 user2.greeting=function() {
-  console.log(`hello user ${this.name}`);//'this' references from the object 
+ // console.log(`hello user ${this.name}`);//'this' references from the object 
   
 }
 
 // console.log(user2.greeting);//[Function (anonymous)]
- console.log(user2.greeting());
+//  console.log(user2.greeting());
 
 
 

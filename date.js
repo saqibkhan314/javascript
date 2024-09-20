@@ -17,7 +17,7 @@ let timestamp=Date.now();
 
 console.log(timestamp);//o/p is in Milliseconds
 
-console.log(timestamp/1000);// it is in second bt in decimal
+//console.log(timestamp/1000);// it is in second bt in decimal
 
-console.log(Math.floor(timestamp/1000));
+//console.log(Math.floor(timestamp/1000));
 

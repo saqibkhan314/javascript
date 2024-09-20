@@ -3,7 +3,7 @@
     // let acc=6564;
     // let email="sk@gmail.com"
     // console.table([acc,email])
-    // console.log(typeof null );
+    // console.log(typeof null );  //object
 
     /****************************************************************/
 
@@ -19,7 +19,7 @@
     // console.log(typeof score);
     // let num=Number(score)
     // console.log(typeof num);
-    // console.log( num);
+    // console.log(num); //NaN
 
      /****************************************************************/
 
@@ -31,8 +31,8 @@
     /****************************************************************/
 
     // let a="saqib";
-    // console.log(a.substring(0,4));
-    // console.log(a.slice(0,4)); // we can take -ve value as well in the () 
+    // console.log(a.substring(0,4)); //last index will not be included
+    // console.log(a.slice(0,4)); // we can take -ve value as well in the (). last index will not be included
     // console.log(a.slice(-8,-4));
 
 
@@ -40,7 +40,7 @@
     
   //  let a="saqib";
   //  let ans=Boolean(a);
-  //  console.log(ans);
+  //  console.log(ans); //true => bcoz in js non- empty string s are treated as true
      
 
     /****************************************************************/
