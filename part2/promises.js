@@ -18,7 +18,7 @@ let promiseOne =  new Promise(function(resolve,reject){
 
    setTimeout(function(){
     console.log("Async task completed");
-    resolve();
+    resolve(); // this funct tells the promise that everything has been done successfully.
    },1000)
 });
 
