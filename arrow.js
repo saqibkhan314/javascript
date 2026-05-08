@@ -2,13 +2,13 @@ let user={
   name:"saqib",
   age:20,
   welcome: function(){
-    // console.log(`${this.name} welcome`);//if we want to refer current context
-    // console.log(this); //then this keyword can be used
+    console.log(`${this.name} welcome`);//if we want to refer current context ===>> saqib welcome
+    console.log(this); //then this keyword can be used ====>>> {name: 'saqib', age: 20, welcome: ƒ}
 }
 }
 // user.welcome()
 // user.name="khan"
-// user.welcome()
+user.welcome()
 //console.log(this);  //{} empty object bcoz we are using this in node env but if we do console.log(this) in the browser then it's global object is 'window' and if use this only inside a funct then we get some global values
 
 
@@ -63,4 +63,4 @@ let add3 = (num1,num2) => (num1 + num2)//no need to write return
 // //if we want to declare objects in arrow funct then we have to write inside the parenthesis()
 
 let add4 = (num1,num2) => ({username:"saqib"})
-console.log(add4(2,4));  
+// console.log(add4(2,4));  

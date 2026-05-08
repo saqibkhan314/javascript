@@ -1,8 +1,10 @@
  let num=[1,2,3]
  //using function
  let result=num.reduce( function (accumulator,val) {
-  console.log(`acc: ${accumulator} val: ${val}`);
-  
+  console.log(`acc: ${accumulator} val: ${val}`);   //acc: 0 val: 1
+                                                    // acc: 1 val: 2
+                                                    // acc: 3 val: 3
+                                                    //6
   return accumulator + val;
  },0 )
 

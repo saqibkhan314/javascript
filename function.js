@@ -1,13 +1,13 @@
-// let user={
-//   name:"saqib",
-//   age:20,
-//   year:2024
-// }
-// function handleobj(anyobject)
-// {
-//   console.log(`username is ${anyobject.name} and his age is ${anyobject.age}`);
-// }
-// handleobj(user);
+let user={
+  name:"saqib",
+  age:24,
+  year:2024
+}
+function handleobj(anyobject)
+{
+  console.log(`username is ${anyobject.name} and his age is ${anyobject.age}`);
+}
+handleobj(user);
 
 
 /****************OR******************* */
@@ -33,7 +33,7 @@
 
 
 
-add(5)                  //It will show an error bcoz
-let add=function(num){  //Cannot access 'add' before initialization
-  return num+2
-}
+// add(5)                  //It will show an error bcoz
+// let add=function(num){  //Cannot access 'add' before initialization
+//   return num+2
+// }
